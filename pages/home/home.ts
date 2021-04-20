@@ -3,13 +3,14 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  styleUrl:['home.css']
 })
 export class HomePage {
   height: number;
   weight: number;
   bmi: number;
-  bmiMessage: string;
+  bmiMsgm: string;
 
 calculateBMI() {
   this.bmi = this.weight / (this.height *this.height);
